@@ -149,7 +149,7 @@ body {
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
-    left: 80rem;
+    left: 60rem;
     transform: translateX(-50%);
     animation: bus 2s infinite;
 }
@@ -879,4 +879,5 @@ span {
  .footer-links a:hover::before {
     opacity: 1;
     left: -10px;
+
  }
