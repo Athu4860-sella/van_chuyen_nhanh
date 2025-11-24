@@ -55,7 +55,7 @@ body {
 
 .logo a , i {
     position: relative;
-    right: 255px;
+    right: 350px;
     text-decoration: none;
     color: var(--primary-drak);
 }
