@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DỊCH VỤ VẬN CHUYỂN NHANH</title>
+    <!-- link to font awesome for icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tạo file style riêng -->
+     <link rel="stylesheet" href="style.css">
+    <!-- Favion -->
+    <link id='favicon' rel="shortcut icon" href="hìnhanh/favion giao nhanh.jpg" type="image/x-png">
+</head>
+<body>
+     <!-- oneheader -->
+     <header class="oneheader">
+        <!-- logo -->
+        <a href="#home"><div class="logo"> VẬN CHUYỂN NHANH</a>
+             <!-- i  -->
+            <i class="fa-solid fa-truck-fast icon-green"></i>
+        </div>
+    <!-- nav-links -->
+        <div class="nav-links">
+            <a href="#home">Trang Chủ</a>
+            <a href="#about">Trang Đặt Dịch Vụ</a>
+            <a href="#contact">Trang Hỗ Trợ</a>
+        </div>
+     </header>
+
+<!-- hero -->
+     <section class="hero" id="home">
+        <!-- hero-content -->
+     <div class="hero-content">
+        <h1>GỬI HÀNH LÍ <span><br>NHANH GỌN</span></h1>
+        <p>Dịch vụ vận chuyển hành lý nhanh, an toàn và tiện
+             lợi. Giao nhận tận nơi - tiết kiệm thời gian, chi phí và công sức của bạn.</p>
+     </div>
+
+     <div class="scroll-indicator">
+        <i class="fa-solid fa-chevron-down icon-green"></i>
+     </div>
+     </section>
+
+    <!-- khung riêng -->
+     <section class="nav2">
+      <div class="nav-all">
+        <div class="nav-left">
+            <a href="#price"><i class="fa-solid fa-sack-dollar"></i>
+            Tính giá vận chuyển </a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#follow"><i class="fa-regular fa-truck"></i>
+            Theo dõi đơn hàng</a>
+        </div>
+      </div>
+     </section>
+
+
+    <!-- herotwo tinh giá vận chuyển -->
+    <section class="container"  id="price">
+        <div class="containet-small">
+
+            <h2>Tính giá vận chuyển</h2>
+
+            <form id="tinhgiavanchuyen">
+                <!-- one(4 cái) -->
+                <div class="one">
+                    <label for="Địa chỉ gửi">Địa chỉ gửi (Tỉnh/Thành phố) </label>
+                    <input type="text" id="from" placeholder="" required>
+                    
+                </div>
+
+                <div class="one">
+                    <label for="Địa chỉ nhận">Địa chỉ nhận (Tỉnh/Thành phố)</label>
+                    <input type="text" id="to" placeholder="" required>
+                </div>
+
+                <div class="one">
+                    <label >Trọng lượng (kg)</label>
+                    <input type="number" id="weight" min="0" step="0.1" placeholder="Nhập trọng lượng">
+                </div>
+
+                <div class="one">
+                    <label>Loại hàng</label>
+                    <select id="type">
+                        <option value=""></option>
+                        <option value="document">Tài liệu</option>
+                        <option value="luggage">Hành lí</option>
+                        <option value="fragile">Hàng dễ vỡ</option>
+                        <option value="electronic">Hàng điện tử</option>
+                        
+                    </select>
+                    
+                </div>
+
+                <div class="one">
+                    <label >Lựa chọn dịch vụ</label>
+                    <select id="service">
+                        <option value=""></option>
+                        <option value="Standard">Tiêu chuẩn (Standard)</option>
+                        <option value="express">Nhanh(Express +50%)</option>
+                    </select>
+                
+                </div>
+                
+                <div class="two">
+                    <button onclick="calculate()" class="btn">Tính giá</button>
+                    <button type="reset" class="btn1">Làm lại</button>
+                </div>
+
+                <p>Kết quả :</p>
+                <div id="result">---</div>
+            </form>
+        </div>
+        <script src="pheptinh.js"></script> 
+<!-- image1 -->
+        <div class="image1">
+            <img src="hìnhanh/Pedido.jpg" alt="">
+        </div>
+    </section>
+    
+    <!-- herothree -->
+    <section class="container1" id="follow">
+        <div class="small2">
+
+            <h2 >Tra cứu nhanh</h2>
+
+            <form id="tracuunhanh">
+                <div class="group2">
+                <label for="Mã đơn hàng">Mã đơn hàng</label>
+                <input type="text" id="Mã đơn hàng" placeholder="VD12345">
+                </div>
+
+                <div class="group2">
+                <button type="button">Theo dõi đơn</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="image2">
+                <img src="hìnhanh/anhnhanhang.jpg" alt="">
+             </div>
+    </section>
+
+    <!-- chọn dịch vụ phù hợp -->
+
+    
+    <h2 class="item">Chọn dịch vụ phù hợp</h2>
+    <section class="table123"> 
+
+        <div class="table1-content">
+            <h3>Dịch vụ Express 24h</h3>
+            <p>Giao hàng nhanh chóng</p>
+            <p>Tiện lợi và linh hoạt</p>
+            <p>Đáp ứng nhu cầu cấp bách</p>
+            <p>Tăng độ tin cậy</p>
+        </div>
+
+        <div class="table1-content">
+           <h3> Dịch vụ thường (Standard)</h3>
+           <p>Chi phí thấp hơn</p>
+           <p>Phù hợp cho hàng khối lượng lớn hoặc số lượng nhiều</p>
+           <p>Thường có mạng lưới rộng hơn</p>
+        </div>
+    </section>
+            
+<!-- Trang đặt dịch vụ -->
+     
+         
+          <div class="sectin-header" id="about">
+                <h2 class="box1">Đặt dịch vụ vận chuyển</h2>
+          </div>
+
+        <section class="choses" >
+
+        <div class="choses-content">
+            <h3>1.Thông tin người gửi</h3>
+            <label for="">Họ và tên <span>*</span></label>
+            <input type="text" id="" placeholder="" required>
+        </div>
+
+        <div class="choses-content">
+            <label for="">Số điện thoại <span>*</span></label>
+            <input type="phone number" id="" placeholder="" required>
+        </div>
+
+        <div class="choses-content">
+            <label for="">Địa chỉ lấy hàng <span>*</span></label>
+            <input type="Address" id="" placeholder="" required>
+        </div>
+
+        <div class="choses-content">
+            <h3>2.Thông tin người nhận </h3>
+            <label for="">Họ và tên <span>*</span></label>
+            <input type="text" id="" placeholder="" required>
+        </div>
+
+        <div class="choses-content">
+            <label for="">Số điện thoại <span>*</span></label>
+            <input type="phone number" id="" placeholder="" required>
+        </div>
+
+        <div class="choses-content">
+            <label for="">Địa chỉ giao hàng <span>*</span></label>
+            <input type="text" id="" placeholder="" required>
+        </div>
+
+        <div class="choses-content">
+            <h3>3.Thông tin hàng hoá</h3>
+            <label for="">Loại dịch vụ</label>
+            <select name="" id="" class="choses-content1">
+                <option value="1">Dịch vụ Express 24h</option>
+                <option value="2">Dịch vụ thường (Standard)</option>
+            </select>
+        </div>
+
+        <div class="choses-content">
+            <label for="">Trọng lượng (kg)</label>
+            <input type="number" id="" placeholder="">
+        </div>
+
+        <div class="choses-content">
+            <label for="">Loại hàng</label>
+            <select  id="" class="choses-content2">
+                <option value="1">Tài liệu</option>
+                <option value="2">Hành lí</option>
+                <option value="3">Hàng dễ vỡ</option>
+                <option value="4">Hàng điện tử</option>
+            </select>
+        </div>
+
+
+        
+        <div class="choses-content">
+            <h3>4.Phương thức thanh toán</h3>
+            <label for="">
+            <input type="radio" name="C" value="1" checked> Chuyển khoản ngân hàng
+            </label>
+            <label for="">
+            <input type="radio" name="C" value="2" checked> Thanh toán khi nhận tiền (COD)
+            </label>
+            <label for="">
+                <input type="radio" name="C" value="3" checked> Ví momo
+            </label>
+            <label for="">
+                <input type="radio" name="C" value="4" checked> Thẻ tín dụng
+            </label>
+        </div>
+
+
+        <div class="choses-content">
+            <label for="">Ghi chú thêm (nếu có)</label>
+            <input type="text">
+        </div>
+
+        <div class="choses-content">
+            <button>Xác nhận đặt dịch vụ</button>
+        </div>
+
+    </section>
+ 
+     <!-- trang hỗ trợ khách hàng  -->
+
+    <!-- Câu hỏi -->
+     
+  <section class="support" id="contact">
+     <h2>Hỗ Trợ Khách Hàng</h2>
+    <section class="question">
+      <div class="question-big">
+         <h3>FAQ - Câu hỏi thường gặp <i class="fa-regular fa-circle-question"></i></h3>   
+         <div class="question-item">
+         <details>
+            <summary>Làm sao để theo dõi đơn</summary>
+            <p>Bạn nhập mã đơn vào mục "Theo dõi đơn hàng" </p>
+         </details>
+         </div>
+
+         <div class="question-item">
+            <details>
+                <summary>Thời gian giao hàng Express là bao lâu</summary>
+                <p>Giao hàng nhanh từ 12-24h tuỳ khu vực</p>
+            </details>
+         </div>
+
+         <div class="question-item">
+            <details>
+                <summary>Nếu hành lý hư hỏng phải làm gì ? </summary>
+                <p>Điền vào đơn khiếu nại bên dưới trong vòng 24 giờ</p>
+            </details>
+         </div>
+        </div>
+
+         <div class="image3">
+            <img src="hìnhanh/cauhoi.jpg" width="600px" alt="cauhoi">
+         </div>
+    </section>
+
+    <!-- Hướng dẫn -->
+
+    <section class="Instructions">
+    <div class="Instructions-content">
+      <div class="Instructions-item">
+       
+        <h3> Hướng dẫn gửi hành lí <i class="fa-solid fa-person-walking-luggage"></i></h3>
+        <p>- Đóng gói hành lý chắc chắn, dùng băng keo bảo vệ.</p>
+        <p>- Không gửi các vật cấm: chất cháy nổ, chất lỏng dễ đổ, pin hỏng..</p>
+        <p>- Ghi rõ thông tin người gửi - nhận.</p>
+      </div>
+
+        <div class="image4">
+            <img src="hìnhanh/huongdan.jpg" alt="">
+        </div>
+
+    </div>
+    </section>
+
+    <!-- Khiếu nại/phản ánh -->
+
+    <section class="Complaints">
+        <div class="Complaints-item">
+            <h3>Gửi khiếu nại / Báo cáo sự cố 
+                <i class="fa-regular fa-face-smile"></i>
+            </h3>
+         <div class="Complaints-item-big">
+            <div class="Complaints-item1-small">
+            <label for="">Mã vận đơn :</label>
+            <input type="text" placeholder="Nhập mã vận đơn">
+            </div>
+
+            <div class="Complaints-item2-small">
+            <label for="">Mô tả sự cố :</label>
+            <input type="text" placeholder="Mô tả vấn đề gặp phải">
+            </div>
+         </div>
+
+            <div class="Complaints-item3-small">
+                <label for="">Ảnh minh chứng (tuỳ chọn)</label>
+                <input type="file"  placeholder="chưa có tệp nào được chọn " >
+            </div>
+
+            <div class="report">
+              <button type="submit">Gửi khiếu nại</button>
+            </div>
+
+        </div>
+    </section>
+
+  </section>
+
+  <!-- footer -->
+
+  <footer>
+    <div class="box">
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3>Thông tin liên hệ</h3>
+                <p><i class="fa-solid fa-location-dot"></i>Số 1, Phố Xốm, Phường Phú Lương, Hà Nội</p>
+                <p><i class="fa-solid fa-phone"></i>(555) 123-4567</p>
+                <p><i class="fa-solid fa-envelope"></i>ndat32222@gmail.com</p>
+            </div>
+
+           <div class="footer-links">
+            <h3>Địa chỉ liên kết</h3>
+            <ul class="footer-links-item">
+               <li><a href="#home">Trang Chủ</a></li>
+               <li><a href="#about">Trang Đặt Dịch Vụ</a></li>
+               <li><a href="#contact">Trang Hỗ Trợ</a></li>
+            </ul>
+           </div>
+          
+        </div>
+
+        
+    </div>
+  </footer>
+
+   
+</body>
+</html>
