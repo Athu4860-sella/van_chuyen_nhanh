@@ -149,7 +149,7 @@ body {
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
-    left: 60rem;
+    left: 80rem;
     transform: translateX(-50%);
     animation: bus 2s infinite;
 }
@@ -505,7 +505,7 @@ h2 {
     padding: 50px 50px;
     line-height: 40px;
     background: var(--maubang);
-    left: 20rem;
+    left: 25rem;
     margin-top: 200px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
