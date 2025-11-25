@@ -719,6 +719,10 @@ span {
     justify-content: space-around;
  }
 
+.Complaints-item-big {
+    position: relative;
+    right: 40px;
+ }
 
 
 .Complaints-item1-small label {
@@ -881,4 +885,5 @@ span {
     left: -10px;
 
  }
+
 
